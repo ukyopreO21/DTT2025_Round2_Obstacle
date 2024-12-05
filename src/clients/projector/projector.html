@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" as="style" href="/src/clients/projector/projector.css">
+    <link rel="icon" type="image/x-icon" href="/src/assets/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>ĐTT2025 - VÒNG 2: Vượt Chướng ngại vật</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div id="first-click" onclick="removeBg()"></div>
+    <div class="container">
+        <div class="row-1">
+            <span>CHƯỚNG NGẠI VẬT CÓ&nbsp</span>
+            <span class="orange" id="obstacle-length">0</span>
+            <span class="orange">&nbspKÍ TỰ</span>
+        </div>
+
+        <div class="row-2">
+            <div id="row-number">
+                <div id="row"></div>
+                <div id="row-length"></div>
+            </div>
+            <div class="timer-slider">
+                <div class="slider">
+                    <div id="animation" class="animation"></div>
+                    <div class="time"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row-3">
+            <div class="question">
+                <span id="question-text">
+                </span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="/src/clients/projector/projector.js"></script>
+
+</html>

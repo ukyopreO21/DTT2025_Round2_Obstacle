@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" as="style" href="/src/clients/admin/admin.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+
+<body>
+    <button class="red" onclick="startRound()">Số kí tự</button><br>
+    <button name="1" class="blue" onclick="openQuestion(this)">HN1</button>
+    <button name="2" class="blue" onclick="openQuestion(this)">HN2</button>
+    <button name="3" class="blue" onclick="openQuestion(this)">HN3</button>
+    <button name="4" class="blue" onclick="openQuestion(this)">HN4</button>
+    <button name="5" class="blue" onclick="openQuestion(this)">HN5</button><br>
+    <button name="15" class="green" onclick="timing(this)">15s</button>
+    <button name="10" class="green" onclick="timing(this)">10s</button>
+
+    <div id="time">15</div>
+
+    <p id="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officia magni sapiente, cum pariatur vero cupiditate odit
+        totam nemo aperiam in quidem dolorem! Placeat explicabo fuga voluptas. Odio, eum quia.</p>
+</body>
+
+<script src="/src/clients/admin/admin.js"></script>
+
+</html>

@@ -1,0 +1,167 @@
+html {
+    font-family: "Be Vietnam Pro";
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/src/assets/Background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 10px;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 10px 100px 10px 100px
+}
+
+.row-1 {
+    position: absolute;
+    top: 2%;
+    left: 15%;
+    right: 15%;
+    bottom: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 6.5rem;
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient(to right bottom, #a80000, #960002, #830003, #720002, #600000);
+    border-radius: 15px;
+    border: 3px solid white;
+    box-sizing: border-box;
+}
+
+.row-2 {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    bottom: 72%;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-3 {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    top: 30%;
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: rgb(25, 25, 25);
+}
+
+.orange {
+    color: orange;
+}
+
+#row-number {
+    background-image: linear-gradient(to right bottom, #a80000, #960002, #830003, #720002, #600000);
+    position: absolute;
+    top: 12.5%;
+    bottom: 12.5%;
+    width: 25%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    flex-direction: column;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 3px solid white;
+    color: white;
+}
+
+.timer-slider {
+    position: absolute;
+    right: 0%;
+    width: 60%;
+    height: 100%;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    border: 3px solid white;
+    top: 12.5%;
+    bottom: 12.5%;
+    background-color: rgb(25, 25, 25);
+}
+
+.question {
+    padding: 10px 30px 10px 30px;
+    font-size: 6.5rem;
+    color: white;
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+.animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, #a80000, #960002, #830003, #720002, #600000);
+}
+
+@keyframes animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.animation-10s {
+    animation: animation 10s linear;
+    animation-fill-mode: forwards;
+}
+
+.animation-15s {
+    animation: animation 15s linear;
+    animation-fill-mode: forwards;
+}
+
+.time {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+#first-click {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    font-size: 5rem;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 99;
+    cursor: pointer;
+}
