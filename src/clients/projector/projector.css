@@ -71,31 +71,66 @@ html {
     position: absolute;
     top: 12.5%;
     bottom: 12.5%;
-    width: 25%;
+    width: 40%;
     box-sizing: border-box;
 
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    flex-direction: column;
+    flex-direction: row;
     font-weight: 500;
     border-radius: 10px;
     border: 3px solid white;
     color: white;
+    text-align: center;
+}
+
+#row {
+    flex: 1;
+    font-size: 7rem;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid white;
+    height: 100%;
+}
+
+#row-length {
+    flex: 3;
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid white;
+    font-weight: 500;
+    height: 100%;
+}
+
+#row-point {
+    flex: 3;
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    height: 100%;
 }
 
 .timer-slider {
     position: absolute;
     right: 0%;
-    width: 60%;
+    width: 50%;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .slider {
     position: absolute;
     width: 100%;
-    height: 75%;
+    top: 12.5%;
+    bottom: 12.5%;
     border: 3px solid white;
     top: 12.5%;
     bottom: 12.5%;

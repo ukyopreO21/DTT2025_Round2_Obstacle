@@ -11,8 +11,9 @@ socket.on("_openQuestion", (data) => {
     document.getElementById("animation").classList.remove("animation-10s", "animation-15s");
     void document.getElementById("animation").offsetWidth;
 
-    document.getElementById("row").textContent = `Hàng ngang ${data.num} - ${25 - 5 * (data.num - 1)} điểm`;
+    document.getElementById("row").textContent = `${data.num}`;
     document.getElementById("row-length").textContent = `${data.length} kí tự`;
+    document.getElementById("row-point").textContent = `${25 - 5 * (data.num - 1)} điểm`;
     document.getElementById("question-text").textContent = data.question;
 });
 

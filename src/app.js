@@ -26,8 +26,14 @@ server.listen(PORT, () => {
     console.log(`App listening at http://localhost:${PORT}`);
 });
 
-const lengths = [5, 5, 5, 5, 5, 5];
-const questions = [`test1`, `test2`, `test3`, `test4`, `test5`];
+const lengths = [8, 7, 15, 7, 6, 8];
+const questions = [
+    `Giới hạn sinh quyển của địa cầu bao gồm toàn bộ phần thuỷ quyển, phần trên của thạch quyển và một phần thấp có chiều cao khoảng 20km thuộc về lớp "vỏ bọc" nào bảo vệ Trái Đất khỏi phần lớn các tác động của vũ trụ?`,
+    `Nhà bác học người Hà Lan Christiaan Huygens đã là người đầu tiên đưa ra lý thuyết về bản chất của loại sóng đặc biệt nào vào thế kỉ 17?`,
+    `Do ảnh hưởng của môi trường đặc biệt nào trên Trái Đất mà la bàn (kim chỉ Nam) có thể hoạt động để xác định phương hướng địa lý?`,
+    `Saint Petersburg là một thành phố ở Liên Bang Nga thường xảy ra một hiện tượng trong khoảng từ giữa tháng 5 đến giữa tháng 7 được gọi là "bạch dạ". "Dạ" là từ Hán Việt chỉ khoảng thời gian nào trong ngày?`,
+    `RGB, RYB, CMYK, HSB là một số hệ thống khác nhau của yếu tố nào trong lĩnh vực in ấn và thiết kế kỹ thuật số?`,
+];
 
 io.on("connection", (socket) => {
     socket.on("startRound", () => {
